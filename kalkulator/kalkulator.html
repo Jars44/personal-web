@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="kalkulator">
+      <input type="text" id="hasil" disabled />
+      <div class="baris">
+        <button class="bersihkan" onclick="bersihkanHasil()">AC</button>
+        <button onclick="tambahkanAngka('(')">(</button>
+        <button onclick="tambahkanAngka(')')">)</button>
+        <button class="operator" onclick="tambahkanOperator('/')">/</button>
+      </div>
+      <div class="baris">
+        <button onclick="tambahkanAngka('7')">7</button>
+        <button onclick="tambahkanAngka('8')">8</button>
+        <button onclick="tambahkanAngka('9')">9</button>
+        <button class="operator" onclick="tambahkanOperator('*')">x</button>
+      </div>
+      <div class="baris">
+        <button onclick="tambahkanAngka('4')">4</button>
+        <button onclick="tambahkanAngka('5')">5</button>
+        <button onclick="tambahkanAngka('6')">6</button>
+        <button class="operator" onclick="tambahkanOperator('-')">-</button>
+      </div>
+      <div class="baris">
+        <button onclick="tambahkanAngka('1')">1</button>
+        <button onclick="tambahkanAngka('2')">2</button>
+        <button onclick="tambahkanAngka('3')">3</button>
+        <button class="operator" onclick="tambahkanOperator('+')">+</button>
+      </div>
+      <div class="baris">
+        <button onclick="tambahkanAngka('0')">0</button>
+        <button onclick="hapusKarakter()">⌫</button>
+        <button class="samaDengan" onclick="hitungHasil()">=</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

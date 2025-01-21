@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180vh;
+    margin: 0;
+    background: linear-gradient(to right, #0f8c29, #302663, #24243e); /* Gradient background */
+}
+
+.clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 8, 8, 0.8); /* Background semi-transparan */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 20px 30px rgba(6, 255, 255, 0.8); /* Efek neon */
+    border: 1px solid #98f7ff; /* Baris neon */
+}
+
+#clock {
+    font-size: 5em; /* Ukuran font yang besar untuk efek dramatis */
+    font-weight: bold;
+    color: #00f7ff; /* Warna neon cyan */
+    text-shadow:
+        0 3px 5px #08f7ff,
+        0 0 5px #66f7ff,
+        0 7px 10px #88f7ff,
+        0 0 10px #00f7ff; /* Efek glow neon lebih tajam */
+    font-family: 'Press Start 2P', cursive; /* Font retro */
+}
